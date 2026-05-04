@@ -1,3 +1,5 @@
-@import "mixins.scss";
-@include font-face("Lato", 400,  url("../../fonts/lato/Lato-Regular.woff2") format("woff2"));
-@include font-face("Oswald", 400,  url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
+$primary-font: "oswaldregular", sans-serif;
+$secondary-font: "Lato-Regular", sans-serif;
+
+@include font-face("oswaldregular", 400, normal, url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
+@include font-face("Lato-Regular", 400, normal, url("../../fonts/lato/Lato-Regular.woff2") format("woff2"));

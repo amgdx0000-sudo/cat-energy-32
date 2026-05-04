@@ -1,31 +1,25 @@
-.additional-products {
+.product {
   &__title {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-  }
-
-  &__type {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
     text-transform: uppercase;
     color: #222222;
   }
 
-  &__package {
+  &__description {
     font-family: $secondary-font;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 16px;
     color: #444444;
   }
 
-  &__price {
+  &__another-description {
     font-family: $secondary-font;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 16px;
     color: #444444;
   }
 
