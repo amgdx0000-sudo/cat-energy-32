@@ -4,7 +4,7 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #222222;
+    color: $based-color-black;
   }
 
   &__description {
@@ -12,7 +12,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #444444;
+    color: $based-color-text;
   }
 
   &__another-description {
@@ -20,7 +20,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #444444;
+    color: $based-color-text;
   }
 
   &__button {
@@ -28,6 +28,6 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $based-color-white;
   }
 }

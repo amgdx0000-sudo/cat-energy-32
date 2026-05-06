@@ -3,6 +3,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
+    color: $based-color-black;
   }
 
   &__type {
@@ -10,7 +11,7 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #222222;
+    color: $based-color-black;
   }
 
   &__package {
@@ -18,7 +19,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    color: #444444;
+    color: $based-color-text;
   }
 
   &__price {
@@ -26,7 +27,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
-    color: #444444;
+    color: $based-color-text;
   }
 
   &__button {
@@ -34,6 +35,6 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $based-color-white;
   }
 }

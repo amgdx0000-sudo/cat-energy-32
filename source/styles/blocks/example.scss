@@ -3,6 +3,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
+    color: $based-color-black;
   }
 
   &__description {
@@ -10,7 +11,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #444444;
+    color: $based-color-text;
   }
 
   &__additional {
@@ -18,5 +19,6 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
+    color: $based-color-black;
   }
 }

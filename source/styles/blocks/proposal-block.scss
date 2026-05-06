@@ -1,24 +1,30 @@
 .proposal-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   &__header {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
-    color: #ffffff;
+    color: $based-color-white;
+    text-align: center;
   }
 
   &__phrase {
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    color: #ffffff;
+    color: $based-color-white;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__button {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: #ffffff;
+    color: $based-color-white;
     text-transform: uppercase;
   }
 }

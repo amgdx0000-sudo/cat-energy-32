@@ -4,12 +4,15 @@
 @import "common/fonts";
 @import "common/uppercase";
 @import "common/variables";
+@import "common/visually-hidden";
 
 // BLOCKS
 @import "blocks/body";
 @import "blocks/container-body";
 @import "blocks/container-main-header";
 @import "blocks/main-header";
+@import "blocks/nav";
+@import "blocks/nav-mobile";
 @import "blocks/proposal-block";
 @import "blocks/button";
 @import "blocks/food-image";

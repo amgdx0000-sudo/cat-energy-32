@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: $based-color-black;
+}
+
+.nav {
+  //УБРАТЬ ДЛЯ ВЕРСТКИ НЕ ПОД МОБИЛКУ
+  display: none;
+
+  &__list-item {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

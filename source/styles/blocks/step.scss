@@ -1,13 +1,71 @@
 .step {
+  display: flex;
+  position: relative;
+
   &__description {
     font-family: $secondary-font;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #444444;
+    color: $based-color-text;
+    margin-left: 20px;
+  }
+
+  &__container-icon {
+    background-color: #68b738;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__icon {
-    fill: #ffffff;
+    fill: $based-color-white;
+  }
+
+  &__number {
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    //!!!!!!!!
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    width: 230px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+
+    &__number {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 10px;
+    }
+
+    &__container-icon {
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+      margin-top: 40px;
+    }
+
+    &__description {
+      font-weight: 16px;
+      line-height: 24px;
+      margin: 0;
+      margin-top: 31px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__container {
+      flex-wrap: nowrap;
+    }
   }
 }

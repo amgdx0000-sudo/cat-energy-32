@@ -1,7 +1,46 @@
 .steps {
+  margin: 0 20px;
+
   &__title {
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
+    color: $based-color-black;
+    margin: 0;
+  }
+
+  &__container {
+    margin: 40px 0 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+
+
+    &__title {
+      margin: 0;
+      margin-bottom: 32px;
+      margin-top: 20px;
+    }
+
+    &__container {
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      column-gap: 153px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+
+    &__container {
+      column-gap: 94px;
+    }
   }
 }

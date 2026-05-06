@@ -1,0 +1,9 @@
+.main-footer {
+  &__html-text {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $based-color-text;
+  }
+}
