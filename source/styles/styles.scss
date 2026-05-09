@@ -1,9 +1,9 @@
 // COMMON
-@import "common/global";
 @import "common/mixins";
+@import "common/variables";
+@import "common/global";
 @import "common/fonts";
 @import "common/uppercase";
-@import "common/variables";
 @import "common/visually-hidden";
 
 // BLOCKS
@@ -12,10 +12,8 @@
 @import "blocks/container-main-header";
 @import "blocks/main-header";
 @import "blocks/nav";
-@import "blocks/nav-mobile";
 @import "blocks/proposal-block";
 @import "blocks/button";
-@import "blocks/food-image";
 @import "blocks/container-promo";
 @import "blocks/card";
 @import "blocks/steps";

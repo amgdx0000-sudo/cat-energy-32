@@ -1,8 +1,62 @@
 .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+
   &__toggle {
     cursor: pointer;
     background: url("../../icons/stack.svg#icon-menue");
     border: none;
     padding: 12px;
+  }
+
+  &__toggle--active {
+    cursor: pointer;
+    background: url("../../icons/stack.svg#x-icon");
+    display: none;
+    border: none;
+    padding: 12px;
+  }
+
+  &__logo-wrapper {
+    display: contents;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 13px 20px;
+    margin: 0 20px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 25px 30px;
+
+    &__logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__wrapper {
+      display: contents;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding: 50px 110px;
+
+    &__logo-wrapper {
+      gap: 19px;
+    }
   }
 }

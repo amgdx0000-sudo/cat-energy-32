@@ -1,16 +1,53 @@
-a {
+.nav a {
   text-decoration: none;
   color: $based-color-black;
 }
 
 .nav {
-  //УБРАТЬ ДЛЯ ВЕРСТКИ НЕ ПОД МОБИЛКУ
-  display: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
   &__list-item {
+    text-align: center;
+    padding: 22px 0;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
     text-transform: uppercase;
+    list-style: none;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: auto;
+    gap: 33px;
+
+    &__list-item {
+      border: none;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__list-item--active {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__list-item {
+      font-size: 20px;
+      line-height: 100%;
+    }
+
+    &__list-item a {
+      color: $based-color-white;
+    }
+
+    &__list-item--active {
+      border-bottom: 2px solid $based-color-white;
+    }
   }
 }

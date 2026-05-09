@@ -13,9 +13,8 @@
 
   &__container-icon {
     background-color: #68b738;
-    width: 60px;
-    height: 60px;
     min-width: 60px;
+    min-height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +34,8 @@
   }
 
   @media (min-width: 768px) {
-    width: 230px;
-    height: 280px;
+    min-width: 230px;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
 
@@ -60,6 +59,7 @@
       line-height: 24px;
       margin: 0;
       margin-top: 31px;
+      max-width: 224px;
     }
   }
 

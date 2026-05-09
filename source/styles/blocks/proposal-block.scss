@@ -2,6 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  position: relative;
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 
   &__header {
     font-size: 36px;
@@ -9,6 +18,7 @@
     font-weight: 400;
     color: $based-color-white;
     text-align: center;
+    margin: 27px 20px 25px;
   }
 
   &__phrase {
@@ -18,6 +28,7 @@
     color: $based-color-white;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 302px;
   }
 
   &__button {
@@ -26,5 +37,159 @@
     line-height: 20px;
     color: $based-color-white;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767px) {
+  .proposal-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 302px;
+    background-color: #68b738;
+    z-index: -2;
+  }
+
+  .proposal-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 302px;
+    background: url("/images/index-background-mobile@1x.png") center/cover no-repeat;
+    opacity: 0.2;
+    z-index: -2;
+  }
+
+  .proposal-block {
+    &__image {
+      position: absolute;
+      z-index: -1;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__button {
+      background-color: #68b738;
+      border: none;
+      min-height: 40px;
+      min-width: 100%;
+      margin: 0 20px;
+      padding: 0;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .proposal-block {
+    &__text-wrapper {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__header {
+      color: $based-color-black;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 120px;
+      margin-top: 40px;
+      max-width: 420px;
+    }
+
+    &__phrase {
+      color: $based-color-black;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+      margin-left: 120px;
+      margin-bottom: 50px;
+    }
+
+    &__image {
+      position: absolute;
+      z-index: -1;
+      right: 29px;
+      bottom: -20px;
+    }
+
+    &__button {
+      margin-bottom: 506px;
+      min-width: 242px;
+      min-height: 54px;
+      font-family: $primary-font;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      background-color: #68b738;
+      border: none;
+      margin-left: 120px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .proposal-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: 0;
+
+      &__text-wrapper {
+        margin-bottom: 266px;
+        margin-left: 190px;
+      }
+
+      &__header {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+
+      &__image {
+        position: relative;
+        order: 4;
+      }
+
+      &__phrase {
+        margin: 0;
+        margin-bottom: 52px;
+      }
+
+      &__button {
+        margin: 0;
+      }
+    }
+
+    .proposal-block::after {
+      content: "";
+      position: absolute;
+      top: -166px;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background-color: #68b738;
+      z-index: -2;
+    }
+
+    .proposal-block::before {
+      content: "";
+      position: absolute;
+      top: -166px;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background: url("/images/index-background-desktop 1@1x.png") center/cover no-repeat;
+      opacity: 0.2;
+      z-index: -1;
+    }
   }
 }

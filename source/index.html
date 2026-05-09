@@ -16,49 +16,48 @@
   <div class="container-body">
     <div class="container-main-header">
       <header class="main-header">
-        <picture class="main-header__logo">
-          <source media="(min-width: 1440px)" type="image/svg+xml" width="202" height="59" srcset="/source/images/logo-desctop.svg">
-          <source media="(min-width: 768px)" type="image/svg+xml" width="174" height="50" srcset="/source/images/logo-tablet.svg">
-          <img src="/source/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <picture class="main-header__logo-text">
-          <img src="/source/images/logo-text.svg" width="118" height="21" alt="Текст логотипа Cat Energy">
-        </picture>
+        <div class="main-header__wrapper">
+          <div class="main-header__logo-wrapper">
+            <picture class="main-header__logo">
+              <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="59" srcset="/images/logo-desctop.svg">
+              <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="/images/logo-tablet.svg">
+              <img src="/images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+            </picture>
+            <picture class="main-header__logo-text">
+              <img src="/images/logo-text.svg" width="118" height="21" alt="Текст логотипа Cat Energy">
+            </picture>
+          </div>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-
-        <button class="main-header__toggle--active" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-
+          <button class="main-header__toggle--active" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+        </div>
         <ul class="nav">
-          <li class="nav__list-item"><a href="index.html">Главная</a></li>
+          <li class="nav__list-item nav__list-item--active"><a href="index.html">Главная</a></li>
           <li class="nav__list-item"><a href="catalog.html">Каталог продукции</a></li>
           <li class="nav__list-item"><a href="#">Подбор программы</a></li>
         </ul>
+
       </header>
     </div>
 
-    <ul class="nav-mobile">
-      <li class="nav-mobile__list-item nav__list-item--active"><a href="index.html">Главная</a></li>
-      <li class="nav-mobile__list-item"><a href="catalog.html">Каталог продукции</a></li>
-      <li class="nav-mobile__list-item"><a href="#">Подбор программы</a></li>
-    </ul>
-
     <section class="proposal-block">
-      <h2 class="proposal-block__header">Функциональное
-        питание для котов</h2>
-      <p class="proposal-block__phrase font-md uppercase">Занялся собой? Займись котом!</p>
-      <button class="proposal-block__button button uppercase" type="button">подобрать программу</button>
-    </section>
+      <div class="proposal-block__text-wrapper">
+        <h2 class="proposal-block__header">Функциональное
+          питание для котов</h2>
+        <p class="proposal-block__phrase font-md uppercase">Занялся собой? Займись котом!</p>
+        <button class="proposal-block__button button uppercase" type="button">подобрать программу</button>
+      </div>
+      <picture class="proposal-block__image">
+        <source media="(min-width: 1440px)" type="image/png" width="552" height="499" srcset="/images/index-can-desktop@1x.png 1x, /images/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" type="image/png" width="709" height="609" srcset="/images/index-can-tablet-1@1x.png 1x, /images/index-can-tablet-1@2x.png 2x">
+        <img width="280" height="270" src="/images/index-can-mobile-1@1x.png" srcset="images/index-can-mobile-1@2x.png 2x" alt="Котячий дошик">
+      </picture>
 
-    <picture class="food-image">
-      <source media="(min-width: 1440px)" type="image/png" width="552" height="499" srcset="/source/images/index-can-desktop@1x.png 1x, /source/images/index-can-desktop@2x.png 2x">
-      <source media="(min-width: 768px)" type="image/png" width="709" height="609" srcset="/source/images/index-can-tablet-1@1x.png 1x, /source/images/index-can-tablet-1@2x.png 2x">
-      <img width="280" height="270" src="/source/images/index-can-mobile-1@1x.png" srcset="/source/images/index-can-mobile-1@2x.png 2x" alt="Котячий дошик">
-    </picture>
+    </section>
 
     <section class="container-promo">
 
@@ -191,13 +190,13 @@
 
       <div class="example__image-container">
         <picture class="example__image">
-          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/source/images/fat-cat-desktop@1x.png 1x, /source/images/fat-cat-desktop@2x.png 2x">
-          <img src="/source/images/fat-cat-mobile@1x.png" width="280" height="256" srcset="/source/images/fat-cat-mobile@2x.png 2x" alt="Толстый котик">
+          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/images/fat-cat-desktop@1x.png 1x, /images/fat-cat-desktop@2x.png 2x">
+          <img src="/images/fat-cat-mobile@1x.png" width="280" height="256" srcset="/images/fat-cat-mobile@2x.png 2x" alt="Толстый котик">
         </picture>
 
         <picture class="example__image">
-          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/source/images/thin-cat-desktop@1x.png 1x, /source/images/thin-cat-desktop@2x.png 2x">
-          <img src="/source/images/thin-cat-mobile@1x.png" width="280" height="256" srcset="/source/images/thin-cat-mobile@2x.png 2x" alt="Худой котик">
+          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/images/thin-cat-desktop@1x.png 1x, /images/thin-cat-desktop@2x.png 2x">
+          <img src="/images/thin-cat-mobile@1x.png" width="280" height="256" srcset="/images/thin-cat-mobile@2x.png 2x" alt="Худой котик">
         </picture>
       </div>
     </section>
@@ -215,7 +214,7 @@
 
     <footer class="main-footer">
       <picture class="main-footer__logo-text">
-        <img src="/source/images/logo-text.svg" width="118" height="21" alt="Текст логотипа Cat Energy">
+        <img src="/images/logo-text.svg" width="118" height="21" alt="Текст логотипа Cat Energy">
       </picture>
 
       <div class="socials">
@@ -231,7 +230,7 @@
       </div>
       <a class="main-footer__html" aria-label="Ссылка для перехода на HTML" href="#">
         <p class="main-footer__html-text">HTML Academy</p>
-        <img src="/source/images/html-logo.svg" width="27" height="34" type="image/svg-xml" alt="Логотип HTML Academy">
+        <img src="/images/html-logo.svg" width="27" height="34" type="image/svg-xml" alt="Логотип HTML Academy">
       </a>
 
     </footer>
