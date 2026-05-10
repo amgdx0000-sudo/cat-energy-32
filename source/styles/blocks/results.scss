@@ -1,17 +1,59 @@
 .results {
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
   &__title {
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     color: $based-color-black;
+    text-transform: uppercase;
   }
 
   &__description {
+    position: absolute;
+    bottom: -15px;
     font-family: $secondary-font;
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     text-transform: lowercase;
     color: $based-color-text;
+    background-color: #eaeaea;
+    width: 78px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    width: 162px;
+    height: 77px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 14px;
+      background-color: $based-color-white;
+      width: auto;
+      bottom: -6px;
+    }
+
+
+  }
+
+  @media (min-width: 1440px) {
+    &__description {
+      background-color: #f2f2f2;
+    }
   }
 }

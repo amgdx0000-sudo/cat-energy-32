@@ -163,41 +163,46 @@
     </section>
 
     <section class="example">
+      <div class="example__text-wrapper">
+        <h2 class="example__title">Живой пример</h2>
 
-      <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+          обычный корм на Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он не менял своих
+          привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__results-wrapper">
+          <div class="container-results">
+            <div class="results">
+              <h3 class="results__title">5 кг</h3>
+              <p class="results__description">Снижение веса</p>
+            </div>
 
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-        обычный корм на Cat Energy Slim. Отличный результат
-        без изнуряющих тренировок! При этом он не менял своих
-        привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="results">
+              <h3 class="results__title">60 дней</h3>
+              <p class="results__description">Затрачено времени</p>
+            </div>
+          </div>
 
-      <div class="container-results">
-        <div class="results">
-          <h3 class="results__title">5 кг</h3>
-          <p class="results__description">Снижение веса</p>
+          <div class="example__container-additional">
+            <h3 class="example__additional">Затраты на питание:</h3>
+            <h3 class="example__additional">15 000 руб.</h3>
+          </div>
         </div>
-
-        <div class="results">
-          <h3 class="results__title">60 дней</h3>
-          <p class="results__description">Затрачено времени</p>
-        </div>
-      </div>
-
-      <div class="example__container-additional">
-        <h3 class="example__additional">Затраты на питание:</h3>
-        <h3 class="example__additional">15 000 руб.</h3>
       </div>
 
       <div class="example__image-container">
-        <picture class="example__image">
-          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/images/fat-cat-desktop@1x.png 1x, /images/fat-cat-desktop@2x.png 2x">
-          <img src="/images/fat-cat-mobile@1x.png" width="280" height="256" srcset="/images/fat-cat-mobile@2x.png 2x" alt="Толстый котик">
-        </picture>
+        <div class="example__image-wrapper" id="slider-wrapper">
+          <picture class="example__image--fat">
+            <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/images/fat-cat-desktop@1x.png 1x, /images/fat-cat-desktop@2x.png 2x">
+            <img src="/images/fat-cat-mobile@1x.png" width="280" height="256" srcset="/images/fat-cat-mobile@2x.png 2x" alt="Толстый котик">
+          </picture>
 
-        <picture class="example__image">
-          <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/images/thin-cat-desktop@1x.png 1x, /images/thin-cat-desktop@2x.png 2x">
-          <img src="/images/thin-cat-mobile@1x.png" width="280" height="256" srcset="/images/thin-cat-mobile@2x.png 2x" alt="Худой котик">
-        </picture>
+          <picture class="example__image--slim">
+            <source media="(min-width: 768px)" type="image/png" width="560" height="512" srcset="/images/thin-cat-desktop@1x.png 1x, /images/thin-cat-desktop@2x.png 2x">
+            <img src="/images/thin-cat-mobile@1x.png" width="280" height="256" srcset="/images/thin-cat-mobile@2x.png 2x" alt="Худой котик">
+          </picture>
+          <input type="range" min="0" max="100" value="50" class="example__slider" id="compare-slider">
+        </div>
       </div>
     </section>
     </section>
@@ -235,6 +240,7 @@
 
     </footer>
   </div>
+  <script src="/scripts/slider.js"></script>
 </body>
 
 </html>

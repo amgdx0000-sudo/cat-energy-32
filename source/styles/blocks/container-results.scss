@@ -1,0 +1,17 @@
+.container-results {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
+
+  @media (min-width: 768px) {
+    gap: 43px;
+    margin: 0 30px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    margin-bottom: 34px;
+  }
+}
+
