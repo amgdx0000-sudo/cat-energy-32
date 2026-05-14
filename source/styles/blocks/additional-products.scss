@@ -23,10 +23,24 @@
 
   &__container {
     margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 280px;
+    min-height: 111px;
+    border-top: 1px solid #cdcdcd;
+    margin-bottom: 19px;
+  }
 
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__type {
@@ -35,6 +49,7 @@
     line-height: 16px;
     text-transform: uppercase;
     color: $based-color-black;
+    margin-bottom: 13px;
   }
 
   &__package {
@@ -43,6 +58,7 @@
     font-size: 14px;
     line-height: 14px;
     color: $based-color-text;
+    margin-bottom: 15px;
   }
 
   &__price {
@@ -54,6 +70,10 @@
   }
 
   &__button {
+    width: 280px;
+    height: 40px;
+    background-color: #68b738;
+    border: none;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
