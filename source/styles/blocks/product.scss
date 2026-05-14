@@ -101,7 +101,8 @@
     padding: 0 38px;
 
     &__button {
-      min-width: 169px;
+      min-width: auto;
+      width: 169px;
       margin-top: 27px;
       margin-bottom: 20px;
     }
