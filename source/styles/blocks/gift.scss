@@ -1,9 +1,49 @@
 .gift {
+  background-image: url(/images/catalog-present@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 290px;
+  margin-top: 35px;
+
+  
+
   &__title {
     font-family: $secondary-font;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: $based-color-white;
+    text-align: center;
+    width: 162px;
+    margin-top: 48px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    background-position: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 80px;
+
+    &__title {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 245px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+
+    &__title {
+      text-align: center;
+    }
   }
 }

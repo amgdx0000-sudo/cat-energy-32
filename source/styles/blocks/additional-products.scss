@@ -7,6 +7,9 @@
   position: relative;
   padding: 0 20px;
 
+  &__products-wrapper {
+    width: 100%;
+  }
 
   &__title {
     position: absolute;
@@ -34,8 +37,10 @@
     justify-content: flex-end;
     width: 280px;
     min-height: 111px;
+    padding-top: 13px;
+    margin-bottom: -1px;
     border-top: 1px solid #cdcdcd;
-    margin-bottom: 19px;
+    border-bottom: 1px solid #cdcdcd;
   }
 
   &__wrapper {
@@ -79,5 +84,118 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $based-color-white;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    margin-top: 74px;
+
+    &__title {
+      margin-left: 30px;
+      font-size: 32px;
+      line-height: 32px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    &__type {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &__package {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 49px;
+
+  }
+
+  &__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__container {
+    margin: 80px 30px 70px;
+    width: 100%;
+    
+  }
+
+  &__product {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #CDCDCD;
+    margin: 0;
+    margin-top: -1px;
+    padding: 26px 38px;
+    width: 100%;
+  }
+
+  &__wrapper {
+    justify-content: flex-end;
+  }
+
+  &__button {
+    width: 100%;
+  }
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 91px;
+
+    &__container {
+      margin-top: 100px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      gap: 80px;
+    }
+
+    &__products-wrapper {
+      width: auto;
+    }
+
+    &__wrapper {
+      display: contents;
+    }
+
+    &__product {
+      width: 896px;
+      min-height: auto;
+      padding: 15px 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__button {
+      width: 244px;
+      margin: 0;
+    }
+
+    &__title {
+      margin-left: 30px;
+      font-size: 40px;
+      line-height: 40px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    &__type {
+    width: 162px;
+    margin: 0;
+    }
+
+    &__package {
+      margin: 0;
+    width: 132px;
+
+    }
+
+    &__price {
+    width: 43px;
+    }
   }
 }
