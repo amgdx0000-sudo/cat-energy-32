@@ -44,6 +44,7 @@
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 55px 30px;
 
     &__html {

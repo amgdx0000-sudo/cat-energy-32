@@ -37,6 +37,16 @@
     line-height: 20px;
     color: $based-color-white;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: #5EAA2F;
+  }
+
+  &__button:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.2);
   }
 }
 
